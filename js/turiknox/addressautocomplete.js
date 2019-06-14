@@ -195,7 +195,7 @@ var AddressAutocomplete = Class.create({
                 if (this.regionUpdater.regions[country][region]['name'] === address['region']
                     || this.regionUpdater.regions[country][region]['code'] === address['region']) {
                     if (regionIdTarget) {
-                        regionIdTarget.value = region;
+                        regionIdTarget.value = this.regionUpdater.regions[country][region].region_id;
                     }
                 }
             }
